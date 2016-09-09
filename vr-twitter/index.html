@@ -1,0 +1,143 @@
+<!-- 0.2.0対応 -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <link rel="apple-touch-icon" href="image/favicon.ico" />
+    <title>VR Twitter</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <a-scene>
+<a-sky src="image/back007.jpg"></a-sky>
+
+        <!-- カメラ 空間の中心＝原点0 0 0に設置-->
+        <a-camera position="0 0 0">
+            
+            <!-- timeout : 1000ms = 1秒見つめたらクリック-->
+           <a-entity cursor="fuse: true; fuseTimeout: 1000"
+          position="0 0 -1"
+          geometry="primitive: ring"
+          scale="0.03 0.03 0.03"
+          material="color: blue; shader: flat">
+ 
+  <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+               fill="none" from="0.03 0.03 0.03" to="0.001 0.001 0.001"></a-animation>
+</a-entity>
+        </a-camera>
+
+        <a-image position="0 8 -7" look-at="[camera]" src="image/twitter_logo.png" id="twitter"> </a-image>
+
+        <a-image position="0 -1.5 -1" look-at="[camera]" src="image/tweet/tw1.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="2 2 2"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>
+
+        <a-image position="-3 -1 -1.5" look-at="[camera]" src="image/tweet/tw17.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 2"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>
+
+        <a-image position="1 -1 1" look-at="[camera]" src="image/tweet/tw3.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="2 2 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>
+
+        <a-image position="3 1 -1" look-at="[camera]" src="image/tweet/tw4.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>      
+
+        <a-image position="2 -0.5 -3" look-at="[camera]" src="image/tweet/tw5.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>     
+
+        <a-image position="-2 1 0.5" look-at="[camera]" src="image/tweet/tw6.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="2 2 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>     
+
+        <a-image position="-2 -1 1" look-at="[camera]" src="image/tweet/tw7.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="2 2 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>             
+
+        <a-image position="-1 -1 -2" look-at="[camera]" src="image/tweet/tw18.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="2 2 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>     
+
+        <a-image position="3 -1 0" look-at="[camera]" src="image/tweet/tw9.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 2"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>     
+
+        <a-image position="0 -3 2.5" look-at="[camera]" src="image/tweet/tw10.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>  
+
+        <a-image position="-1.5 1 -1.5" look-at="[camera]" src="image/tweet/tw11.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="2 2 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>  
+
+        <a-image position="0 0.5 -1.5" look-at="[camera]" src="image/tweet/tw19.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="2 2 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>
+
+        <a-image position="2 0.5 2.5" look-at="[camera]" src="image/tweet/tw13.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>
+
+        <a-image position="1 -0.5 5" look-at="[camera]" src="image/tweet/tw14.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>
+
+        <a-image position="-1 1.5 4" look-at="[camera]" src="image/tweet/tw15.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>
+
+        <a-image position="2 2.5 3" look-at="[camera]" src="image/tweet/tw16.svg">
+            <a-animation begin="click" attribute="scale"
+                         dur="500" easing="ease-in-sine" to="3 3 1"></a-animation>
+            <a-animation begin="mouseleave" attribute="scale" delay="500" to="1 1 1"></a-animation>
+        </a-image>                 
+
+    </a-scene>
+
+
+    <script>  
+    var clickElement = document.getElementById("twitter");
+    clickElement.addEventListener("click", function(event) {
+      location.reload();
+    },false);
+    </script>
+
+</body>
+</html>
