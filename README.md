@@ -3,6 +3,9 @@
 - VR Twitter  
 https://thom-i.github.io/aframe/vr-twitter/
 
+- VR HOME  
+https://thom-i.github.io/aframe/vr-home/
+
 - Panorama  
 https://thom-i.github.io/aframe/sample-panorama/
 
