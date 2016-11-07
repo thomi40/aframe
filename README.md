@@ -14,3 +14,6 @@ https://thom-i.github.io/aframe/sample-030/
 
 - VR Sample  
 https://thom-i.github.io/aframe/sample-first/
+
+- Sample of cursor  
+https://thom-i.github.io/aframe/sample-cursor/
