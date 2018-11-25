@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <link rel="shortcut icon" href="image/favicon.ico" />
+    <link rel="apple-touch-icon" href="image/favicon.ico" />
+    <title>VR HOME</title>
+    <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
+
+    <style>
+        .right {
+            position: fixed;
+            display: block;
+            z-index: 10;
+            margin: auto;
+            right: 0px;
+            top: 45%;
+            width: 30px;
+            height: 30px;
+        }
+        
+        .left {
+            position: fixed;
+            display: block;
+            z-index: 10;
+            margin: auto;
+            left: 0px;
+            top: 45%;
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a-scene>
+        <a-sky src="image/back007.jpg"></a-sky>
+
+        <a-camera position="0 0 0">
+            <a-entity cursor="fuse: true; fuseTimeout: 1000" position="0 0 -1" geometry="primitive: ring" scale="0.03 0.03 0.03" material="color: blue; shader: flat">
+                <a-animation begin="cursor-fusing" easing="ease-in" attribute="scale" fill="none" from="0.03 0.03 0.03" to="0.001 0.001 0.001"></a-animation>
+            </a-entity>
+        </a-camera>
+
+        <img src="image/right.png" class="right" />
+        <img src="image/left.png" class="left" />
+
+        <a-image position="0 2.3 -2" look-at="[camera]" src="image/menu.png"> </a-image>
+        <a-image position="0 0.7 -2" look-at="[camera]" src="image/logout.png"> </a-image>
+
+        <a-image position="-3 1.5 0" look-at="[camera]" src="image/twitter_logo.png" id="twitter"> </a-image>
+        <a-image position="-3 1.5 3" look-at="[camera]" src="image/insta_logo.png" id="insta"> </a-image>
+        <a-image position="-4 1.5 7" look-at="[camera]" src="image/googleplus_logo.png" id="google"> </a-image>
+        <a-image position="4 1.5 1" look-at="[camera]" src="image/facebook_logo.png" id="facebook"> </a-image>
+        <a-image position="4 1.5 4" look-at="[camera]" src="image/yahoo_logo.png" id="yahoo"> </a-image>
+        <a-image position="4 1.5 7" look-at="[camera]" src="image/tumblr_logo.png" id="tumblr"> </a-image>
+
+    </a-scene>
+
+    <script>
+    var clickElement = document.getElementById("twitter");
+    clickElement.addEventListener("click", function(event) {
+        location.href = "https://thom-i.github.io/aframe/vr-twitter/";
+    },false);
+    
+    var clickElement = document.getElementById("insta");
+    clickElement.addEventListener("click", function(event) {
+        location.reload();
+    },false);
+    
+    var clickElement = document.getElementById("google");
+    clickElement.addEventListener("click", function(event) {
+        location.reload();
+    },false);
+
+    var clickElement = document.getElementById("facebook");
+    clickElement.addEventListener("click", function(event) {
+        location.reload();
+    },false);
+    
+    var clickElement = document.getElementById("yahoo");
+    clickElement.addEventListener("click", function(event) {
+        location.reload();
+    },false);
+
+    var clickElement = document.getElementById("tumblr");
+    clickElement.addEventListener("click", function(event) {
+        location.reload();
+    },false);
+
+    </script>
+
+</body>
+
+</html>
