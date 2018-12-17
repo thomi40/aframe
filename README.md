@@ -1,19 +1,31 @@
-### Publishing to GitHub Pages
+### Examples
 
-- VR Twitter  
-https://thom-i.github.io/aframe/030/vr-twitter/
+* Version 0.8.0
+  * Sample of Ver0.8.2    
+  https://thom-i.github.io/aframe/082/sample-082/
+  
+  * Sample of text  
+  https://thom-i.github.io/aframe/082/sample-text/
 
-- VR HOME  
-https://thom-i.github.io/aframe/030/vr-home/
+  * Sample of text attribute  
+  https://thom-i.github.io/aframe/082/sample-text-attribute/
 
-- Panorama  
-https://thom-i.github.io/aframe/030/sample-panorama/
+* Version 0.3.0
+  * VR Twitter  
+  https://thom-i.github.io/aframe/030/vr-twitter/
 
-- Sample of Ver0.3.0  
-https://thom-i.github.io/aframe/030/sample-030/
+  * VR HOME  
+  https://thom-i.github.io/aframe/030/vr-home/
 
-- VR Sample  
-https://thom-i.github.io/aframe/020/sample-first/
+  * Panorama  
+  https://thom-i.github.io/aframe/030/sample-panorama/
 
-- Sample of cursor  
-https://thom-i.github.io/aframe/030/sample-cursor/
+  * Sample of Ver0.3.0  
+  https://thom-i.github.io/aframe/030/sample-030/
+  
+  *  Sample of cursor  
+  https://thom-i.github.io/aframe/030/sample-cursor/
+
+* Version 0.2.0
+  * VR Sample  
+  https://thom-i.github.io/aframe/020/sample-first/
