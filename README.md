@@ -1,6 +1,6 @@
 ### Examples
 
-* Version 0.8.0
+* Version 0.8.2
   * Sample of Ver0.8.2    
   https://thom-i.github.io/aframe/082/sample-082/
   
