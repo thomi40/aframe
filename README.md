@@ -10,6 +10,9 @@
   * Sample of text attribute  
   https://thom-i.github.io/aframe/082/sample-text-attribute/
 
+  * Sample of text animation  
+  https://thom-i.github.io/aframe/082/sample-text-animation/
+
 * Version 0.3.0
   * VR Twitter  
   https://thom-i.github.io/aframe/030/vr-twitter/
