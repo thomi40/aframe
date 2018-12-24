@@ -13,6 +13,9 @@
   * Sample of text animation  
   https://thom-i.github.io/aframe/082/sample-text-animation/
 
+  * Sample of link  
+  https://thom-i.github.io/aframe/082/sample-link/
+
 * Version 0.3.0
   * VR Twitter  
   https://thom-i.github.io/aframe/030/vr-twitter/
